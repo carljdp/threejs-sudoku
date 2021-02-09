@@ -1,0 +1,27 @@
+{
+  "name": "threejs-sudoku",
+  "version": "1.0.0",
+  "description": "In-browser Soduku game built with three.js ",
+  "main": "index.js",
+  "scripts": {
+    "start": "./node_modules/.bin/parcel serve index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carljdp/threejs-sudoku.git"
+  },
+  "keywords": [
+    "sudoku",
+    "three.js"
+  ],
+  "author": "carljdp",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/carljdp/threejs-sudoku/issues"
+  },
+  "homepage": "https://github.com/carljdp/threejs-sudoku#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}
