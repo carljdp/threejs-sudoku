@@ -10,10 +10,6 @@ import { WEBGL } from 'three/examples/jsm/WebGL'
 //   document.getElementById( 'container' ).appendChild( warning );
 // }
 
-
-
-
-
 // // Create a canvas
 // const canvas = document.createElement('canvas')
 // canvas.id = 'canvas'
@@ -103,4 +99,15 @@ function makeInstance(geometry, color, x) {
   cube.position.x = x;
 
   return cube;
+}
+
+function resizeRendererToDisplaySize(renderer) {
+  const canvas = renderer.domElement;
+  const width = canvas.clientWidth;
+  const height = canvas.clientHeight;
+  const needResize = canvas.width !== width || canvas.height !== height;
+  if (needResize) {
+    renderer.setSize(width, height, false);
+  }
+  return needResize;
 }
